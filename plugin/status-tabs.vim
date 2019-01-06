@@ -35,7 +35,7 @@ fun! PrintTablineFun()
   :silent se columns?
   redir end
 
-  let x = (split(@a, "=")[1] - len) / 2 - 1
+  let x = (split(@a, "=")[1] - len) / 2
   echohl None | echon repeat(" ", x)
 
   echohl TabLine | echon ' '
