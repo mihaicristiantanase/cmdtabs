@@ -1,7 +1,8 @@
-# status-tabs
+# cmdtabs
 
 ### What is does:
-1. displays a very simplified tabline in the statusbar when pressing F3 key;
+1. displays a very simplified tabline in the command line when pressing F3
+   key;
 2. keeps the actual tabline hidden;
 
 The fake tabline shows the number of the tab with additional "+" character in
@@ -17,11 +18,11 @@ second tab currently selected, the fake tabline will look like this
 ```c
   1  [ 2+]  3    4+
 ```
-This tabline is displayed in the middle of the statusline.
+This tabline is displayed in the middle of the command line.
 
 ### What is the motivation:
 An additional line is needed to show vim's tabline. This plugin shows a fake
-tabline in an area which is always visible, the statusline.
+tabline in an area which is always visible, the command line.
 
 This is an incremental improvement over the
 [vim-mctab](https://github.com/mihaicristiantanase/vim-mctab).
@@ -31,10 +32,10 @@ the active windows while trazitioning.
 ### How to install:
 
 Vundle<br/>
-`Plugin 'mihaicristiantanase/status-tabs'`
+`Plugin 'mihaicristiantanase/cmdtabs'`
 
 vim-plug<br/>
-`Plug 'mihaicristiantanase/status-tabs'`
+`Plug 'mihaicristiantanase/cmdtabs'`
 
 Pathogen<br/>
-`git clone https://github.com/mihaicristiantanase/status-tabs ~/.vim/bundle/status-tabs`
+`git clone https://github.com/mihaicristiantanase/cmdtabs ~/.vim/bundle/cmd-tabs`
