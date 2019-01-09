@@ -1,5 +1,5 @@
 " Keep tab line always hidden.
-" When pressing <F3> display the tabline in the statusline.
+" When pressing <F3> display the tabline in the command line.
 
 se stal=0
 
