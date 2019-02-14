@@ -1,5 +1,7 @@
 # cmdtabs
 
+![](./res/demo.gif)
+
 ### What is does:
 1. displays a very simplified tabline in the command line when pressing F3
    key;
