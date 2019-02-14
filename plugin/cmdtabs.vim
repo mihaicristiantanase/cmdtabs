@@ -64,3 +64,4 @@ fun! PrintTablineFun()
 endf
 
 nnoremap <silent> <F3> :call PrintTablineFun()<CR>
+autocmd TabEnter * call PrintTablineFun()

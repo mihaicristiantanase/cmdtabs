@@ -29,6 +29,9 @@ This is an incremental improvement over the
 vim-mctab plugin displays a simplified tabline for a breaf moment, disrupting
 the active windows while trazitioning.
 
+Another reason is that it's very useful to have a quick glimpse of the tab
+line when changing tabs.
+
 ### How to install:
 
 Vundle<br/>
