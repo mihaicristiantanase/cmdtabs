@@ -28,7 +28,13 @@ fun! LengthTablineFun()
   return tabline_width
 endf
 
+let g:ignoreNextTabEnterFun = 0
+
 fun! PrintTablineFun()
+  if g:ignoreNextTabEnterFun == 1
+    let g:ignoreNextTabEnterFun = 0
+    return
+  endif
   let len = LengthTablineFun()
 
   redir @a
@@ -63,5 +69,13 @@ fun! PrintTablineFun()
   echohl None
 endf
 
+fun! IgnoreNextTabEnterFun()
+  let g:ignoreNextTabEnterFun = 1
+endf
+
 nnoremap <silent> <F3> :call PrintTablineFun()<CR>
-autocmd TabEnter * call PrintTablineFun()
+augroup CMDTABS
+  autocmd!
+  autocmd TabNew * call IgnoreNextTabEnterFun()
+  autocmd TabEnter * call PrintTablineFun()
+augroup END
